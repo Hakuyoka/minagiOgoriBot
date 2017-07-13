@@ -4,7 +4,7 @@
 'use strict';
 
 let getPhoto = require("./fliker")
-var bot_token = process.env.SLACK_BOT_TOKEN || 'xoxb-208598708229-WLYcogcfRSWDdRq1CahEvmDp';
+var bot_token = process.env.SLACK_BOT_TOKEN || '';
 
 let channel;
 var RtmClient = require('@slack/client').RtmClient;
