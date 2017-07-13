@@ -2,7 +2,7 @@
  * Created by kotato on 2017/07/06.
  */
 
-var bot_token = process.env.SLACK_BOT_TOKEN || 'xoxb-208598708229-WLYcogcfRSWDdRq1CahEvmDp';
+var bot_token = process.env.SLACK_BOT_TOKEN || '';
 
 let channel;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
