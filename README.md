@@ -1,0 +1,2 @@
+# minagiOgoriBot
+くそボット
