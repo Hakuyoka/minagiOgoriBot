@@ -10,7 +10,6 @@ flickrOptions = {
 };
 
 function getPhoto(text) {
-
   return new Promise((resolve, reject)=>{
     Flickr.tokenOnly(flickrOptions, function(error, flickr) {
       console.log("start")

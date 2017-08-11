@@ -13,7 +13,7 @@ var rtm = new RtmClient(bot_token);
 rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, (rtmStartData) => {
   for (const c of rtmStartData.channels) {
 
-    if (c.is_member && c.name ==='random') { channel = c.id }
+    if (c.is_member && c.name ==='bot_test') { channel = c.id }
   }
   console.log(`Logged in as ${rtmStartData.self.name} of team ${rtmStartData.team.name}, but not yet connected to a channel`);
   console.log(channel)
@@ -21,7 +21,7 @@ rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, (rtmStartData) => {
 
 //you need to wait for the client to fully connect before you can send messages
 rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function () {
-  rtm.sendMessage("万世Botがoutしました。", channel);
+  // rtm.sendMessage("万世Botは #bot_test に引越しました。", channel);
 });
 
 
